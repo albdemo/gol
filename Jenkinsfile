@@ -6,11 +6,11 @@ pipeline {
 				bat 'mvn clean install'
 			}
 		}
-		 // start of deploy state
+		 // start of deploy state some more changes here 
    		 stage('deploy') {
      		 // define step to run
      			 steps {
-        	//invoke command to stop tomcat service
+        	//invoke command to stop tomcat service some more changes
        			 	bat 'C:\\Users\\iplou00\\Documents\\jenkins-apache-env\\stop_apache.bat'
         			bat 'ping 127.0.0.1 -n 6'
         			// copy war file from build target to webapp Tomcat folder
