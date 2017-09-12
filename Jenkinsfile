@@ -16,7 +16,7 @@ pipeline {
         			// copy war file from build target to webapp Tomcat folder
         			bat 'xcopy /y C:\\Users\\iplou00\\.jenkins\\workspace\\GOL_Pipeline\\gameoflife-web\\target\\gameoflife.war "C:\\apache-tomcat-7.0.79\\webapps"'
         			//invoke command to start tomcat service      
-        			bat 'C:\\Users\\iplou00\\Documents\\jenkins-apache-env\\start_apache.bat'
+        			bat 'cmd.exe /k C:\\Users\\iplou00\\Documents\\jenkins-apache-env\\start_apache.bat'
       			}
     		} 
 	}
