@@ -1,5 +1,7 @@
 pipeline {
-	agent any
+	agent {
+		label "Windows_Slave"
+	}
 	stages{
 		stage('build'){
 			steps{
