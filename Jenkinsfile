@@ -19,6 +19,9 @@ pipeline {
         			bat 'C:\\Users\\iplou00\\Documents\\jenkins-apache-env\\start_apache.bat'
       			}
     		} 
+		stage('Post Deploy'){
+			echo 'Hello World'
+		}	
 	}
 }
 
