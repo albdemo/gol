@@ -20,7 +20,9 @@ pipeline {
       			}
     		} 
 		stage('Post Deploy'){
-			echo 'Hello World'
+			steps{
+				echo 'Hello World'
+			}
 		}	
 	}
 }
